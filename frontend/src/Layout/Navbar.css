@@ -1,0 +1,328 @@
+.navbar {
+  position: relative;
+  border-radius: 50px;
+  margin: 0 50px;
+  height: 4rem;
+  box-shadow: 1px 2px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  top: 25px;
+  border: 1px solid #eeeeee99;
+}
+
+
+.list li:not(:last-child)::after {
+  content: "|";
+  margin-left: 1rem;
+  color: #999;
+}
+
+.navbar-light a,
+.navbar-light i{
+  color:white;
+}
+
+.navbar-light .nav-icon i{
+  color:white;
+}
+
+.navbar-light .list a{
+  color:white;
+}
+.navbar-light .list a.active{
+  color:white;
+}
+/* Página INÍCIO → barras brancas */
+.navbar-home .list li:not(:last-child)::after {
+  color: #fff;
+}
+
+
+/* container do menu */
+.navbar .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* menu central */
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.list a {
+  position: relative;
+  color: #0c5a75;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-home .list a {
+  color: #fff;
+}
+
+.navbar-home .list a.active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ícones da direita */
+.navba i {
+  color: #0c5a75;
+}
+
+.navbar-home .navba i {
+  color: #ffffff;
+}
+
+.list a.active {
+  font-weight: bold;
+  color: #0c5a75;
+}
+
+/* área da direita */
+.navba {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: auto;
+}
+
+/* Ícones */
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-icon i {
+  font-size: 23px;
+  color: #0c5a75;
+}
+
+/* BOTÃO PERFIL */
+.menu-mobile-btn {
+  display: flex;
+  background: transparent;
+  padding: 0;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.menu-mobile-btn:hover {
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.menu-mobile-btn i {
+  font-size: 45px;
+}
+
+
+.search-box {
+  position: relative;
+
+}
+
+.caixa-busca {
+  width: 45px;
+  height: 40px;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+#check {
+  display: none;
+  border-radius: 50%;
+}
+
+#check:checked~.caixa-busca {
+  width: 200px;
+}
+
+.caixa-busca input {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c5a75;
+  cursor: pointer;
+}
+
+
+/* MENU LATERAL */
+.btn {
+  display: flex;
+  border: 1px solid black;
+}
+
+
+.sidebar {
+  height: 450px;
+  width: 350px;
+  position: fixed;
+  top: 0;
+  right: -1250px;
+  background: #eeeeee;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.3s;
+  padding-top: 5px;
+  z-index: 1000;
+  border-radius: 50px;
+  justify-items: center;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.usuario{
+  margin-top: 15px;
+  padding: 0 25px;
+  justify-self: left;
+}
+.sidebar a i {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 90px;
+  border-radius: 50%;
+  background: #0c5a75;
+  line-height: 30px;
+}
+
+.sidebar a {
+  margin-top: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.2s;
+  color: white;
+  text-align: center;
+}
+
+.sidebar a:hover {
+  color: black;
+  border: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.detalhe:hover {
+  transform: translateY(-1px) scale(1);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+.detalhe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  height: 45px;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  top: 20px;
+  background: #6F6F6F;
+
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+    margin: 0px;
+    height: 4rem;
+    padding: 0 15px;
+    top: 0;
+    border: none;
+  }
+
+
+  .list li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #999;
+  }
+
+  /* container do menu */
+  .navbar .container {
+    left: 34%;
+  }
+
+  /* menu central */
+  .list {
+    gap: 5px;
+  }
+
+  .list a {
+    font-size: 10px;
+  }
+
+
+  /* área da direita */
+  #check:checked~.caixa-busca {
+    width: 130px;
+  }
+
+  .caixa-busca input {
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 15px;
+    font-size: 12px;
+
+  }
+
+  .navba {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-icon i {
+    font-size: 23px;
+    color: #0c5a75;
+  }
+}

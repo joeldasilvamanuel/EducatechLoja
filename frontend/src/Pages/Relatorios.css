@@ -1,0 +1,323 @@
+.relatorios-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 50px;
+  padding:0 55px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.relatorio {
+  margin-top: 50px;
+  color: white;
+}
+
+.relatorio h1 span {
+  font-size: 12px;
+  color: rgb(30, 255, 0);
+
+}
+
+.relatorio h1 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+section p {
+  font-size: 16px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.info-box {
+  text-align: center;
+  flex: 1;
+}
+
+.info-box i {
+  font-size: 25px;
+}
+
+.info-box h4 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #000;
+}
+
+.left .p {
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.left .p a {
+  text-decoration: none;
+  color: rgb(5, 5, 158);
+}
+
+.card-inf {
+  display: block;
+  padding: 0 30px;
+}
+
+.card-inf h4 {
+  font-size: 22px;
+}
+
+.card-inf p {
+  font-size: 16px;
+  color: #000;
+}
+
+
+.progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #1ad39b, #00e6ff);
+  transition: 1s;
+  animation: progress 2s forwards;
+}
+
+@keyframes progress {
+  to {
+    width: 60%;
+  }
+}
+
+/* BUTTONS */
+
+.bottom {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.bottom .bi{
+  padding: 5px;
+
+}
+
+.bottom button {
+  flex: 1;
+  padding: 15px 0;
+  border: none;
+  border-radius: 30px;
+  background: #083f4d;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 13px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+.bottom button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .29);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buttons .atualizar {
+  margin-bottom: 20px;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #27b4c9;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+}
+
+.buttons .atualizar:hover {
+  transform: translateY(-3px);
+}
+
+
+/* Grafico e tempo */
+
+.graf-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  height: 300px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 45%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#1ad39b 0% 70%,
+      rgba(255, 255, 255, 0.2) 70% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+
+.circle-inner {
+  width: 60%;
+  height: 60%;
+  background: #0c5a75;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.circle-inner h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.circle-inner p {
+  font-size: 12px;
+}
+
+.graf-info {
+  font-size: 14px;
+  color: #d9faff;
+}
+
+.graf-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.graf-text h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.percent {
+  margin-top: 5px;
+  color: #c8ffd5;
+  font-weight: 600;
+}
+
+/* Alerta do plano */
+
+.alert {
+  background: #f4deb5;
+  color: #333;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.alert button {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease,
+}
+
+.renovar {
+  background: #0c8f6c;
+  color: #fff;
+  margin-right: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.depois {
+  background: rgb(166, 166, 166)
+}
+
+.renovar:hover {
+  transform: scale(1.03);
+  transition: 0.5s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.depois:hover {
+  transform: scale(1.03);
+  transition: 0.5s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+
+.stat{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(25px);
+border-radius:22px;
+padding: 28px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.stat-item{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+}
+
+.stat-bar{
+height:6px;
+background:rgba(255,255,255,0.25);
+border-radius:20px;
+overflow:hidden;
+}
+
+.stat-bar span{
+display:block;
+height:100%;
+background:linear-gradient(90deg,#1ad39b,#00e6ff);
+width:0%;
+transition:1s;
+}

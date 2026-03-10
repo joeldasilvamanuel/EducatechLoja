@@ -1,0 +1,153 @@
+:root {
+    --cor-branca: #ffffff;
+    --cor-azul: #0c5a75;
+}
+
+main {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 15% 20%,
+            #135e79 35%,
+            #0a83ab 75%);
+}
+
+h1{
+    font-weight: 800;
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+.form-grup {
+    margin-bottom: 1rem;
+}
+
+.form-grup label {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    padding:0 20px;
+}
+
+.form-row {
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+.form-row div input{
+    width: 215px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #02b3ff;
+    font-size: 14px;
+}
+p{
+    color: #ffffff;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+form {
+    background: #0c5f75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.form-grup input {
+    font-size: 1.1rem;
+    width: 450px;
+    height: 3rem;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    border: 1px solid var(--cor-azul);
+    padding: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #0c5a75;
+    box-shadow: 0 0 0 3px rgba(8, 131, 165, 0.3);
+}
+
+button {
+    display: flex;
+    border: none;
+    background: #0a3240;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.form-icon{
+    gap: 0rem;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    display: grid;
+    margin-top: 5px;
+    padding:0 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.icon a{
+    background: transparent;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid white;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: white;
+  font-weight: 600;
+}

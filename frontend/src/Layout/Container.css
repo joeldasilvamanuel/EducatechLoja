@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  margin: 0 auto;   /* 👈 isto centra horizontalmente */
+  padding: 0;
+  max-width: 1200pt;
+}
+
+
+/*tablets */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+    gap: 0.8rem;
+  }
+}
+
+/* Ajustes mobiles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    align-items: center;
+    padding: 0 10px;
+    gap: 0.5rem;
+  }
+}

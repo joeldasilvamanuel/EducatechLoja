@@ -1,0 +1,324 @@
+.lojas {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.lojas-header h1 {
+  color: #0c5a75;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.lojas-header p {
+  font-size: 20px;
+  color: #0c5a75;
+  padding: 5px 0;
+}
+
+/* CARDS */
+
+.cardss {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.card {
+  background: #0c5a75;
+  padding:0 2rem;
+  border-radius: 30px;
+  color: white;
+  position: relative;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.c1 {
+  position: relative;
+  top: 45px;
+}
+
+.c3 {
+  position: relative;
+  top: 45px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  background: white;
+  color: #0c5a75;
+  padding: 0.5rem;
+  border-radius: 15px;
+  margin-bottom: 0;
+  margin-top: -20px;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease,
+}
+
+
+.info-title {
+  font-size: 45px;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.info-title span {
+  font-size: 15px;
+}
+
+.info {
+  font-size: 15px;
+  padding: 0 10px;
+
+}
+
+.card-info{
+  padding: 0;
+}
+.card-info .bi {
+  display: flex;
+  color: #ffff;
+  padding: 2px 0;
+}
+
+
+.btn-aderir {
+  display: flex;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #0c5a75;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 70%;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-top: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-info .btn-aderir a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card:hover .btn-aderir {
+  background: #fff;
+}
+
+.card:hover .btn-aderir a {
+  color: #0c5a75;
+  font-weight: 700;
+}
+
+.btn-aderir:hover {
+  transform: scale(1.05);
+}
+
+/* CTA EXTRA */
+
+.cta-extra {
+  margin-top: 3rem;
+}
+
+.btn-gratis {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 15px;
+  background: #0c5a75;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  height: 45px;
+  width: auto;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn-gratis .bi {
+  color: #fff;
+  font-size: 36px;
+  padding: 0;
+}
+
+.btn-gratis:hover {
+  transform: scale(1.03);
+}
+
+/* GARANTIA */
+
+.garantia {
+  margin-top: 4rem;
+  padding: 40px;
+  background: #0c5a75;
+  color: white;
+  border-radius: 20px;
+}
+
+.garantia h2 {
+  font-size: 30px;
+}
+
+.garantia p {
+  padding: 10px;
+}
+
+/* FAQ */
+
+.faq {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.faq h2 {
+  color: #0c5a75;
+  padding: 10px 0;
+}
+
+.faq-item {
+  background: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.faq-item h4 {
+  padding-bottom: 5px;
+
+}
+
+.faq-item p {
+  color: #4b4b4b;
+
+}
+
+.faq-item:hover {
+  transform: scale(1.02);
+}
+
+/* Responsivo */
+@media (max-width: 968px) {
+  .cards {
+    font-size: 2 rem;
+  }
+
+  .c1 {
+    top: 0;
+
+  }
+
+  .c3 {
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .lojas {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .lojas-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .lojas-header p {
+    font-size: 12px;
+  }
+
+
+  /* CARDS */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-title {
+    margin-top: -30px;
+    width: 90%;
+    height: 25px;
+  }
+
+  .card-title h2 {
+    font-size: 17px;
+  }
+
+
+  .info-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 700;
+  }
+
+  .info-title span {
+    font-size: 12px;
+  }
+
+  .info {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+
+  .btn-aderir {
+    width: 80%;
+    height: 20px;
+  }
+
+  .card-info .btn-aderir a {
+    font-size: 12px;
+    
+  }
+
+  .btn-gratis {
+    margin: 1rem auto 0;
+    font-size: 12px;
+  }
+
+  .garantia h2 {
+    font-size: 20px;
+  }
+
+  .garantia p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .garantia {
+    padding: 30px 5px;
+  }
+}
