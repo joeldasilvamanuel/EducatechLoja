@@ -1,5 +1,5 @@
-.home-background {
-  background-color: #0c5a75; /* mesma cor da navbar */
+.blue-background {
+  background: radial-gradient(circle at 15% 20%, #14839a 35%, #0c5a75 75%);
   min-height: 100vh;
   width: 100%;
 }

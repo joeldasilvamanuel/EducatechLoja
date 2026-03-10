@@ -7,7 +7,7 @@ function Inicio() {
 
     const slides = [
         {
-            img: "/tec.jpg",
+            img: "/apend.jpg",
             title: "EDUCA",
             highlight: "TEC",
             text: "Descubra a plataforma de educação em tecnologia mais inovadora do mercado! "
@@ -19,7 +19,7 @@ function Inicio() {
             text: "Aprofunde seus conhecimentos em tecnologia e inovação com os nossos cursos especializados."
         },
         {
-            img: "/oport.jpg",
+            img: "/fun.webp",
             title: "INOVA",
             highlight: "ÇÃO",
             text: "Explore as últimas tendências e tecnologias emergentes. Aprenda a criar soluções inovadouras e transformar o mundo com tecnologia."
@@ -44,7 +44,6 @@ function Inicio() {
         }
         return "transparent";
     };
-
     return (
         <div
             style={{
@@ -128,15 +127,15 @@ function Inicio() {
             </section>
             {/* ESTATÍSTICAS */}
             <section className="stats">
-                <div className="stat">
+                <div className="statt">
                     <h2>+150</h2>
                     <p>Escolas e Empresas Parceiras</p>
                 </div>
-                <div className="stat">
+                <div className="statt">
                     <h2>+20K</h2>
                     <p>Alunos Ativos</p>
                 </div>
-                <div className="stat">
+                <div className="statt">
                     <h2>99%</h2>
                     <p>Satisfação</p>
                 </div>
@@ -150,7 +149,7 @@ function Inicio() {
                     <p>
                         “A BDZ Digital Tec revolucionou completamente a nossa gestão escolar.”
                     </p>
-                    <span>— Diretor Escola Horizonte</span>
+                    <span>— Diretor Colégio Júlia</span>
                 </div>
 
                 <div className="testemunho-card">

@@ -8,8 +8,14 @@ function Suporte() {
                 <p>POR FAVOR DEIXA O SEU FEEDBACK OU A SUA QUESTÃO</p>
             </header>
 
-
             <div className="suport-area">
+                <div className="contactos">
+                    <h2>Outras formas de contacto</h2>
+
+                    <p><i className="bi bi-telephone"></i> +244 900 000 000</p>
+                    <p><i className="bi bi-envelope"></i> suporte@bdzdigitaltec.com</p>
+                    <p><i className="bi bi-clock"></i> Atendimento: 08h às 18h</p>
+                </div>
                 <div className="suporte-form">
                     <input type="text" placeholder="Seu Nome" />
                     <input type="email" placeholder="Seu Email" />
@@ -21,13 +27,7 @@ function Suporte() {
                         <option>Informações</option>
                     </select>
                 </div>
-                <div className="contactos">
-                    <h2>Outras formas de contacto</h2>
-
-                    <p><i className="bi bi-telephone"></i> +244 900 000 000</p>
-                    <p><i className="bi bi-envelope"></i> suporte@bdzdigitaltec.com</p>
-                    <p><i className="bi bi-clock"></i> Atendimento: 08h às 18h</p>
-                </div>
+                
 
                 <textarea className="text-area"></textarea>
                 <div className="suport-anexo">

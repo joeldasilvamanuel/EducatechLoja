@@ -1,7 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 
+}
+body.bg-azul{
+  background:#0c5a75;
 }
 
 .principa {
@@ -14,7 +18,7 @@ html, body {
 #home {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 87vh;
   overflow: hidden;
 }
 
@@ -35,10 +39,8 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4));
   z-index: 2;
 }
 
@@ -64,7 +66,7 @@ html, body {
   font-size: 4rem;
   margin: 0;
   font-weight: 600;
-  font-family: 'Alimony' ;
+  font-family: 'Alimony';
 }
 
 .home-txt h1 span {
@@ -108,6 +110,7 @@ html, body {
   margin: 0;
   font-size: 16px;
 }
+
 .ganhar {
   display: flex;
   align-items: center;
@@ -143,7 +146,8 @@ html, body {
 .dot.active {
   background: #0c5a75;
   transform: scale(1.4);
-} 
+}
+
 .dot:hover {
   transform: scale(1.5);
 }
@@ -161,6 +165,7 @@ html, body {
   margin-bottom: 20px;
   font-weight: 800;
 }
+
 .sobre p {
   font-size: 16px;
   margin-bottom: 5px;
@@ -181,15 +186,17 @@ html, body {
   text-align: center;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-.vantagem-card h3{
+
+.vantagem-card h3 {
   color: #0c5a75;
   font-size: 17px;
   padding: 10px 0;
 }
-.vantagem-card p{
+
+.vantagem-card p {
   color: #6f6f6f;
   font-size: 15px;
 }
@@ -215,12 +222,12 @@ html, body {
   flex-wrap: wrap;
 }
 
-.stat h2 {
+.statt h2 {
   font-size: 48px;
   margin: 0;
 }
 
-.stat p {
+.statt p {
   margin-top: 10px;
   font-size: 16px;
 }
@@ -231,8 +238,9 @@ html, body {
   text-align: center;
   background: #f5f7fa;
 }
-.testemunhos h2{
- color: #0c5a75;
+
+.testemunhos h2 {
+  color: #0c5a75;
 }
 
 .testemunho-card {
@@ -241,14 +249,16 @@ html, body {
   padding: 20px;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
 }
-.testemunho-card p{
+
+.testemunho-card p {
   color: #0c5a75;
   padding: 10px;
 }
-.testemunho-card span{
+
+.testemunho-card span {
   color: #4b4b4b;
 }
 
@@ -279,11 +289,47 @@ html, body {
 
 /* Responsivo */
 @media (max-width: 768px) {
+  #home {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+
   .home-txt h1 {
-    font-size: 2 rem;
+    font-size: 2rem;
   }
 
   .home-txt {
-    padding: 25px;
+    padding: 10px;
+  }
+
+  .home-txt p {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+
+  .box-botton {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+
+  .box-boot {
+    display: flex;
+    gap: 0;
+    padding: 20px 4px;
+    height: 30px;
+  }
+
+  .ganhar p {
+    display: flex;
+    font-size: 12px;
+  }
+
+  .ganhar .bi {
+    font-size: 20px;
   }
 }

@@ -8,7 +8,7 @@ function Lojas() {
         <p>ESCOLHA O PLANO PERFEITO PARA A SUA VISÃO</p>
       </header>
 
-     <div className="cards">
+     <div className="cardss">
         <div className="card c1">
 
           <div className="card-title">
@@ -74,7 +74,7 @@ function Lojas() {
       <div className="garantia">
         <h2>Garantia Total</h2>
         <p>
-          Experimente durante 30 dias. Se não estiver satisfeito,
+          Experimente durante 30 dias e desfrute!. Se não estiver satisfeito,
           devolvemos o seu investimento.
         </p>
       </div>

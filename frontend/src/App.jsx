@@ -8,11 +8,17 @@ import Navbar from "./Layout/Navbar";
 import "./App.css";
 
 function AppWrapper() {
+
   const location = useLocation();
+
   const isHome = location.pathname === "/";
+  const isRelatorios = location.pathname === "/Relatorios";
+
+  const blueBackground = isHome || isRelatorios;
 
   return (
-    <div className={isHome ? "home-background" : ""}>
+    <div className={blueBackground ? "blue-background" : ""}>
+
       <Navbar />
 
       <Container>
@@ -23,6 +29,7 @@ function AppWrapper() {
           <Route path="/Suporte" element={<Suporte />} />
         </Routes>
       </Container>
+
     </div>
   );
 }
